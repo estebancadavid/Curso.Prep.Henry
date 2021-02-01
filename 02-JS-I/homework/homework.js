@@ -88,7 +88,14 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (str1.length === str2.length) {
+    return true;
+  } else {
+    return false
+  }
 }
+
+tienenMismaLongitud ('hi', 'there')
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -223,64 +230,102 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  // Tu código:
+  if (numero === 0) {
+    return false;
+    }
+    else if (numero > 0){
+      return "Es positivo"
+    }
+    else {
+      return "Es negativo"
+    }
 }
+
+esPositivo (0)
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var agregarSimboloExclamacion = (str + '!')
+  return (str + '!')
 }
+
+agregarSimboloExclamacion ('hello world')
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
-  var combinarNombres = (nombre + apellido)
+  var combinarNombres = nombre + ' ' + apellido
   return combinarNombres
 }
 
-combinarNombres ('hello ' ,  'world')
+combinarNombres ('Soy','Henry')
+
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  var obtenerSaludo = 'Hola ' + nombre + '!'
+  return obtenerSaludo
 }
+
+obtenerSaludo ('Martin')
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+  var obtenerAreaRectangulo = alto * ancho
+  return obtenerAreaRectangulo
 }
 
+obtenerAreaRectangulo (2,2)
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+  var retornarPerimetro = lado * 4
+  return retornarPerimetro
 }
 
+retornarPerimetro (2)
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var areaDelTriangulo = (base * altura)/2
+  return areaDelTriangulo 
 }
+
+areaDelTriangulo (10,5)
 
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var deEuroAdolar = euro * 1.2
+  return deEuroAdolar
 }
 
+deEuroAdolar (100)
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
+  if (letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if (letra ==="a" ||letra ==="e" ||letra ==="i" ||letra ==="o" ||letra ==="u"){
+    return "Es vocal"
+  }
 }
 
+esVocal ("la")
 
 
 // No modificar nada debajo de esta línea
